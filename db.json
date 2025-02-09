@@ -1,0 +1,136 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "Introduction to JavaScript",
+      "content": "JavaScript is a versatile programming language.",
+      "author": "John Doe"
+    },
+    {
+      "id": "2",
+      "title": "CSS Grid vs Flexbox vs Superman and Me",
+      "content": "Understanding the differences between CSS Grid and Flexbox and Superman.",
+      "author": "Jane Doe and Superman"
+    },
+    {
+      "id": "3",
+      "title": "React Hooks Guide",
+      "content": "Learn how to use React Hooks effectively.",
+      "author": "Alice Smith"
+    },
+    {
+      "id": "4",
+      "title": "Vue.js vs React",
+      "content": "Which framework should you choose?",
+      "author": "Bob Johnson"
+    },
+    {
+      "id": "5",
+      "title": "Understanding Async/Await",
+      "content": "Simplifying JavaScript asynchronous code.",
+      "author": "Charlie Brown"
+    },
+    {
+      "id": "6",
+      "title": "TypeScript for Beginners",
+      "content": "Why TypeScript improves JavaScript development.",
+      "author": "Daniel White"
+    },
+    {
+      "id": "7",
+      "title": "Tailwind CSS Tips",
+      "content": "How to make your UI development faster with Tailwind.",
+      "author": "Emily Davis"
+    },
+    {
+      "id": "8",
+      "title": "How to Optimize Web Performance",
+      "content": "Improve your website's speed and efficiency.",
+      "author": "Frank Thomas"
+    },
+    {
+      "id": "9",
+      "title": "Node.js Best Practices",
+      "content": "Write better backend code with Node.js.",
+      "author": "Grace Martin"
+    },
+    {
+      "id": "10",
+      "title": "MongoDB vs PostgreSQL",
+      "content": "Choosing the right database for your project.",
+      "author": "Henry Clark"
+    },
+    {
+      "id": "11",
+      "title": "Building a REST API with Express",
+      "content": "A beginner-friendly guide to creating REST APIs.",
+      "author": "Isabella Lewis"
+    },
+    {
+      "id": "12",
+      "title": "State Management in React",
+      "content": "Exploring Redux, Context API, and Recoil.",
+      "author": "Jack Wilson"
+    },
+    {
+      "id": "13",
+      "title": "Web Security Basics",
+      "content": "Learn how to secure your web applications.",
+      "author": "Katie Johnson"
+    },
+    {
+      "id": "14",
+      "title": "Introduction to GraphQL",
+      "content": "Why GraphQL is better than REST APIs.",
+      "author": "Leo Miller"
+    },
+    {
+      "id": "15",
+      "title": "Next.js vs Gatsby",
+      "content": "Which React framework is best for SEO?",
+      "author": "Mia Taylor"
+    },
+    {
+      "id": "16",
+      "title": "JavaScript Design Patterns",
+      "content": "Common design patterns in JavaScript.",
+      "author": "Nathan Harris"
+    },
+    {
+      "id": "17",
+      "title": "Django for Web Development",
+      "content": "A Python framework for building scalable applications.",
+      "author": "Olivia Scott"
+    },
+    {
+      "id": "18",
+      "title": "Best Practices for Responsive Design",
+      "content": "How to make your website mobile-friendly.",
+      "author": "Paul Walker"
+    },
+    {
+      "id": "19",
+      "title": "Deploying Web Apps with Docker",
+      "content": "Learn how to containerize your web applications.",
+      "author": "Quinn Adams"
+    },
+    {
+      "id": "20",
+      "title": "Getting Started with Firebase",
+      "content": "A guide to authentication, storage, and Firestore.",
+      "author": "Rachel Evans"
+    },
+    {
+      "id": "21",
+      "title": "How to Debug JavaScript",
+      "content": "Tips and tricks for debugging JavaScript code.",
+      "author": "Steve Parker"
+    },
+    {
+      "id": "22",
+      "title": "Building a Blog with Next.js",
+      "content": "Create a modern blog using Next.js and Markdown.",
+      "author": "Tina Martinez"
+    }
+  ]
+}
