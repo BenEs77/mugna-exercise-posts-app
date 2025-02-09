@@ -19,10 +19,16 @@ export const getPostById = async (postId: string): Promise<Post> => {
     return response.data;
 };
 
+// Fetch by string params
+export const getPostsByParams = async (params: string): Promise<{ posts: Post[], total: number }> => {
+    const response = await axiosInstance.get(`/posts?${params}`);
+    return { posts: response.data, total: response.headers["x-total-count"] };
+};
+
 // Create a new post
 export const createPost = async (post: Omit<Post, 'id'>): Promise<Post> => {
-    const { data } = await axiosInstance.post("/posts", post);
-    return data;
+    const response = await axiosInstance.post("/posts", post);
+    return response.data;
 };
 
 // Update a post
