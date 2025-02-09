@@ -1,9 +1,17 @@
 import { getPostById } from "@/lib/services/postService";
 import Link from "next/link";
 
-const PostPage = async ({ params }: { params: { id: string } }) => {
+interface ParamsProps {
+    id: string;
+}
 
-    const { id } = params;
+interface PostProps {
+    params: ParamsProps;
+}
+
+const PostPage = async ({ params }: PostProps) => {
+
+    const { id } = await params;
     const post = await getPostById(id);
 
     return (
