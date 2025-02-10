@@ -7,22 +7,24 @@ export interface Post {
     author: string;
 }
 
+interface QueryParams {
+    _page?: number;
+    _limit?: number;
+    _sort?: string;
+    _order?: string;
+    q?: string;
+}
+
 // Fetch all posts
-export const getPosts = async (): Promise<Post[]> => {
-    const response = await axiosInstance.get("/posts");
-    return response.data;
+export const getPosts = async (queryParams?: QueryParams): Promise<{ posts: Post[], total: number }> => {
+    const response = await axiosInstance.get("/posts", { params: queryParams });
+    return { posts: response.data, total: response.headers["x-total-count"] };
 };
 
 // Fetch a single post by ID
 export const getPostById = async (postId: string): Promise<Post> => {
     const response = await axiosInstance.get(`/posts/${postId}`);
     return response.data;
-};
-
-// Fetch by string params
-export const getPostsByParams = async (params: string): Promise<{ posts: Post[], total: number }> => {
-    const response = await axiosInstance.get(`/posts?${params}`);
-    return { posts: response.data, total: response.headers["x-total-count"] };
 };
 
 // Create a new post
