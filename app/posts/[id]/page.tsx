@@ -14,8 +14,6 @@ const PostPage = async ({ params }: PostProps) => {
     const { id } = await params;
     const post = await getPostById(id);
 
-    console.log(post)
-
     return (
         <div className="p-6 bg-gray-100 min-h-screen">
             <div className="max-w-3xl mx-auto bg-white shadow-md rounded p-6">
