@@ -1,9 +1,13 @@
 import PostsList from '@/components/PostsList'
-import { getPostsByParams } from '@/lib/services/postService'
+import { getPosts } from '@/lib/services/postService'
 
 const PostsPage = async () => {
-    const initalQuery = '_page=1&_limit=5&_sort=title&_order=asc';
-    const initialData = await getPostsByParams(initalQuery);
+    const initialData = await getPosts({
+        _page: 1,
+        _limit: 5,
+        _sort: 'title',
+        _order: 'asc',
+    });
 
     return (
         <div className='p-6 bg-gray-100 min-h-screen'>

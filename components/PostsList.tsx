@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from 'react'
-import { deletePost, getPostsByParams, Post } from '@/lib/services/postService';
+import { deletePost, getPosts, Post } from '@/lib/services/postService';
 import Link from 'next/link';
 import PostItem from './PostItem';
 
@@ -24,8 +24,14 @@ const PostsList = ({ initialPosts, totalPosts }: PostsListProps) => {
     useEffect(() => {
         const fetchPosts = async () => {
             try {
-                const query = `_page=${page}&_limit=${limit}&_sort=${filters.sort}&_order=${filters.order}&q=${filters.search}`;
-                const { posts, total } = await getPostsByParams(query);
+                const { posts, total } = await getPosts({
+                    _page: page,
+                    _limit: limit,
+                    _sort: filters.sort,
+                    _order: filters.order,
+                    q: filters.search,
+                });
+
                 setPosts(posts);
                 setTotalPages(Math.ceil(total / limit));
             } catch (error: unknown) {
